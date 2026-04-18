@@ -1,0 +1,25 @@
+/* Custom styles that complement Tailwind */
+
+/* Timeline active state styling */
+.status-step.active {
+    background-color: #1a365d; /* mgnrega-blue */
+    color: white;
+}
+.status-step.completed-step {
+    background-color: #10b981; /* emerald-500 */
+    color: white;
+}
+
+/* Date input appearance */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.4) sepia(1) saturate(3) hue-rotate(180deg);
+}
+
+/* Base input styles for autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
